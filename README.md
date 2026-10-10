@@ -11,19 +11,19 @@ A modern, responsive **Spring Boot** web application for warehouse asset trackin
 ## 📸 Screenshots
 
 ### Login page
-![Login page](screenshots/login.png)
+![Login page](login.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](dashboard.png)
 
 ### Edit a product
-![Edit product](screenshots/edit-product.png)
+![Edit product](edit-product.png)
 
 ### Live search
-![Live search](screenshots/search.png)
+![Live search](search.png)
 
 ### Delete confirmation
-![Delete confirmation](screenshots/delete-confirm.png)
+![Delete confirmation](delete-confirm.png)
 
 ## 🚀 Key Features
 
@@ -103,7 +103,7 @@ product-inventory-system
 ├── src/main/resources
 │   ├── application.properties
 │   └── templates                 # Thymeleaf pages
-├── screenshots                   # images used in this README
+├── *.png                         # screenshots used in this README
 └── pom.xml
 ```
 
