@@ -1,0 +1,20 @@
+### 🚀 Let's Launch and Run It!
+
+1. Stop any running server instances by hitting the red square **Stop button** inside your Eclipse Console window.
+2. Go to **`App.java`** (`src/main/java/School.Student_Application/App.java`).
+3. Right-click anywhere in the file workspace -> **Run As** -> **Java Application**.
+4. Open your web browser and load up your dashboard address URL: **`http://localhost:8082/`**.
+
+### 🌟 What to Expect and Verify:
+1. **The Login Screen:** Instead of going straight to the dashboard, Spring Security will redirect you to its default login page. Log in with these credentials:
+   * **Username:** `admin`
+   * **Password:** `password123`
+2. **Auto-Increment Verification:** Add a new item (e.g., Name: `Sony TV`, Type: `Electronics`, Price: `65000`). Notice that you didn't have to provide an ID—Hibernate automatically handles sequential key assignments behind the scenes.
+3. **Live Filter Verification:** Click inside the search input box and start typing letters (like `lap` or `fr`). You'll see rows disappear and filter instantly in real-time based on your input.
+
+<FollowUp>
+Let me know how the deployment handles the transition! 
+* Does the **login interface redirect successfully** into your home manager profile panel?
+* Would you like to connect this setup to a **relational user table in your MySQL database** next, allowing you to register new login accounts dynamically rather than hardcoding them in memory?
+</FollowUp>
+

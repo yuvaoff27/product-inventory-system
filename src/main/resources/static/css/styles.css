@@ -1,0 +1,141 @@
+/* Variable-Based Structural Tokens */
+:root {
+    --bg-color: #f4f6f9;
+    --text-main: #333333;
+    --text-muted: #475569;
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    --heading-color: #1e293b;
+    --input-bg: #f8fafc;
+    --input-border: #cbd5e1;
+    --table-header: #0f172a;
+    --table-hover: #f8fafc;
+}
+
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+    --card-border: #334155;
+    --heading-color: #f8fafc;
+    --input-bg: #334155;
+    --input-border: #475569;
+    --table-header: #1e293b;
+    --table-hover: #334155;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Floating Navigation Action Control Panel Elements */
+.theme-toggle-container {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.theme-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn:hover {
+    background-color: #1d4ed8;
+}
+
+h2 {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.col-form { flex: 1; min-width: 320px; }
+.col-table { flex: 2; min-width: 500px; }
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border: 1px solid var(--card-border);
+}
+
+h4 {
+    color: var(--heading-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--card-border);
+    padding-bottom: 10px;
+}
+
+.form-group { margin-bottom: 20px; }
+label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
+input { width: 100%; padding: 11px 16px; border: 1px solid var(--input-border); border-radius: 8px; font-size: 0.95rem; color: var(--text-main); background-color: var(--input-bg); }
+input:focus { outline: none; border-color: #3b82f6; background-color: var(--card-bg); }
+
+.search-input {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.btn { display: inline-block; width: 100%; padding: 12px; background-color: #2563eb; color: #ffffff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+.btn:hover { background-color: #1d4ed8; }
+
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th { background-color: var(--table-header); color: #ffffff; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; padding: 14px 18px; }
+th:first-child { border-top-left-radius: 8px; }
+th:last-child { border-top-right-radius: 8px; }
+td { padding: 14px 18px; border-bottom: 1px solid var(--card-border); font-size: 0.95rem; color: var(--text-main); }
+tr:hover td { background-color: var(--table-hover); }
+
+.asset-type-badge {
+    background: rgba(148, 163, 184, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.btn-action { display: inline-block; padding: 6px 12px; font-size: 0.85rem; font-weight: 600; border-radius: 6px; text-decoration: none; margin-right: 6px; }
+.btn-edit { background-color: #fef3c7; color: #d97706; }
+.btn-edit:hover { background-color: #fde68a; }
+.btn-delete { background-color: #fee2e2; color: #dc2626; }
+.btn-delete:hover { background-color: #fca5a5; }
+.empty-row { text-align: center; color: var(--text-muted); padding: 30px; font-style: italic; }
